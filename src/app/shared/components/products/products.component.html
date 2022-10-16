@@ -1,0 +1,32 @@
+<!--ion-header>
+  <ion-toolbar>
+    <ion-searchbar [debounce]="1000" (ionChange)="handleChange($event)" placeholder="Buscar productos"></ion-searchbar>
+  </ion-toolbar>
+</ion-header-->
+<ion-toolbar style="text-align: center;">
+  <ion-button [disabled]="disabled" (click)="openProduct()">
+    Agregar Producto
+  </ion-button>
+</ion-toolbar>
+<ion-list>
+  <ion-item *ngFor="let item of list">
+    <ion-card>
+      <img (click)="openProduct(item)" alt="products" [src]="item.image" />
+      <ion-card-header (click)="openProduct(item)">
+        <ion-card-title>{{ item.name }}</ion-card-title>
+        <ion-card-subtitle><b>Cantidad: </b>{{ item.quality }}</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-text (click)="openProduct(item)">
+          <p>
+            {{ item.description }}
+          </p>
+        </ion-text>
+        <ion-button (click)="remove(item)" color="danger">
+          <ion-icon [disabled]="disabled" name="trash"></ion-icon>
+          Quitar
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </ion-item>
+</ion-list>

@@ -1,5 +1,5 @@
 {
-  "name": "product",
+  "name": "catalogs",
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
@@ -13,12 +13,13 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/common": "^14.0.0",
+    "@angular/common": "^14.2.6",
     "@angular/core": "^14.0.0",
     "@angular/forms": "^14.0.0",
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
+    "@capacitor/android": "4.3.0",
     "@capacitor/app": "4.0.1",
     "@capacitor/core": "4.3.0",
     "@capacitor/haptics": "4.0.1",

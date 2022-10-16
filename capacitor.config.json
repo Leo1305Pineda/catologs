@@ -2,5 +2,9 @@
 	"appId": "io.ionic.starter",
 	"appName": "product",
 	"webDir": "www",
-	"bundledWebRuntime": false
+	"bundledWebRuntime": false,
+	"allowNavigation": [
+		"https://634c230b317dc96a30921c60.mockapi.io",
+		"http://loremflickr.com"
+	]
 }
