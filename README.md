@@ -1,0 +1,1 @@
+(DESCARGAR LA APK)[https://github.com/Leo1305Pineda/catologs/raw/master/apk/debug/app-debug.apk]
