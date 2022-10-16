@@ -7,6 +7,14 @@
 </ion-header>
 <ion-content>
   <ion-list>
+    <ion-item>
+      <ion-button style="margin: auto;" (click)="runCalculateSunday()">
+        {{ isPrint ? 'Limpiar' : 'Calcular los domingos desde 1901-01-01 hasta 2000-12-31'}}
+      </ion-button>
+    </ion-item>
+    <ion-item *ngFor="let item of print">
+      <p>{{item}}</p>
+    </ion-item>
     <ion-item *ngFor="let item of list">
       <ion-row (click)="openCatalog(item)">
         <ion-col size="3">
